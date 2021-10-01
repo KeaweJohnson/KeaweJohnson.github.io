@@ -1,0 +1,23 @@
+.ex {
+    float: left;
+}
+.ex ul {
+    position: relative;
+    top: 20px;
+    float: left;
+    background-color: white;
+    border: grey 1px solid;
+}
+.ex ul li {
+    list-style-type: none;
+    width: 170px;
+}
+.ex ul li a {
+    float: left;
+    text-decoration: none;
+    color: black;
+    padding: 14px 18px;
+}
+.ex ul li a:hover {
+    background-color: rgba(128, 128, 128, 0.200);
+}
