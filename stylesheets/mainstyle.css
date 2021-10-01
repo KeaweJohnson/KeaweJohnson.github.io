@@ -1,6 +1,6 @@
 html {
     font-family: "Century Gothic", arial, sans-serif;
-    background-image: url("images/bg.png");
+    background-image: url("../images/bg.png");
     overflow-x: hidden;
 }
 .backwrap {
@@ -19,6 +19,7 @@ nav ul li a {
 }
 nav ul li a:hover {
     opacity: 50%;
+    color: cadetblue;
 }
 nav ul li {
     list-style-type: none;

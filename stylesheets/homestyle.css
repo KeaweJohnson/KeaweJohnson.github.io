@@ -1,0 +1,44 @@
+.sil {
+    position: relative;
+    left: 57em;
+    top: 3em;
+    width: 400px;
+    height: auto;
+}
+.intro {
+    position: relative;
+    left: 40em;
+    top: 10em;
+    color: white;
+}
+.hello {
+    font-size: 25pt;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: #ffda33;
+    text-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.325);
+}
+.name {
+    font-size: 16pt;
+    font-weight: bold;
+}
+.about {
+    color: white;
+    font-weight: bolder;
+    font-size: 30pt;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.425);
+    position: relative;
+    left: 16.5em;
+    margin-top: 2em;
+    margin-bottom: -15px;
+}
+.bio {
+    text-align: left;
+    position: relative;
+    left: 41.25em;
+    display:inline-block;
+    background-color: white;
+    border: rgba(128, 128, 128, 0.250) 5px solid;
+    border-radius: 15px;
+    padding: 20px;
+}
