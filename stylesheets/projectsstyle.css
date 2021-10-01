@@ -1,0 +1,45 @@
+.drop {
+    margin-top: 50px;
+}
+.drop ul {
+    float: left;
+}
+.drop ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+    background-color: white;
+    border-radius: 3px;
+    border: gray 1px solid;
+    width: 180px;
+}
+.drop ul li a {
+    display: block;
+    color: black;
+    font-size: 14pt;
+    padding: 18px 14px;
+    text-decoration: none;
+}
+.drop ul li ul {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 12px;
+    border-radius: 0px 0px 3px 3px;
+    width: 120px;
+}
+.drop ul li:hover ul{
+    display: block;
+}
+.drop ul li ul li {
+    width: 120px;
+    border: none;
+    border-radius: 3px;
+}
+.drop ul li ul li a {
+    padding: 8px 14px;
+}
+.drop ul li ul li a:hover {
+    padding: 8px 14px;
+    background-color: #f3f3f3;
+}
