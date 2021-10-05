@@ -1,23 +1,22 @@
-.ex {
-    float: left;
-}
-.ex ul {
-    position: relative;
-    top: 20px;
-    float: left;
+.menu ul {
     background-color: white;
-    border: grey 1px solid;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    top: 50px;
 }
-.ex ul li {
+.menu ul li {
     list-style-type: none;
-    width: 170px;
+    padding: 18px 14px;
+    width: 120;
 }
-.ex ul li a {
-    float: left;
+.menu ul li:hover {
+    background-color: rgba(128, 128, 128, 0.250);
+    transition: background-color 0.25s;
+}
+.menu ul li a {
     text-decoration: none;
     color: black;
-    padding: 14px 18px;
-}
-.ex ul li a:hover {
-    background-color: rgba(128, 128, 128, 0.200);
+    font-size: 14pt;
+    text-transform: uppercase;
 }

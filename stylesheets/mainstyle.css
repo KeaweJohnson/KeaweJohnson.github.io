@@ -19,7 +19,7 @@ nav {
 .homebutton {
     float: left;
     height: auto;
-    width: 320px;
+    width: 316px;
     padding: 5px 10px;
     margin-right: 40px;
 }
@@ -37,24 +37,26 @@ nav ul li a {
     color: black;
     text-transform: uppercase;
     letter-spacing: 2px;
-    padding: 33px 40px;
+    padding: 34px 40px;
     font-size: 14pt;
 }
 nav ul li a:hover {
     background-color: rgba(128, 128, 128, 0.250);
+    transition: background-color 0.25s;
 }
 nav ul li ul {
     display: none;
     position: absolute;
     background-color: white;
     border-radius: 0px 0px 3px 3px;
+    margin-top: -1px;
 }
 nav ul li:hover ul {
     display: block;
 }
 nav ul li ul li a{
     padding: 22px 14px;
-    width: 180px;
+    width: 158px;
 }
 nav ul li ul li a:hover{
     background-color: rgba(128, 128, 128, 0.250);
