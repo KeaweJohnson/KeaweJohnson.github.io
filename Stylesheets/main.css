@@ -23,6 +23,7 @@ html {
 .navulli {
     display: flex;
     align-self: center;
+    transition: background-color .15s;
 }
 .navulli:hover {
     background-color: rgba(0, 0, 0, 0.025);
