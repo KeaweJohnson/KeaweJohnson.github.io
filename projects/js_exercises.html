@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript :: Exercises</title>
+        <meta charset="utf-8">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            html {
+                font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+            }
+            h1 {
+                margin: 5px;
+                padding: 5px;
+                font-weight: 700;
+            }
+            h2 {
+                margin-top: 60px;
+                margin-left: 20px;
+            }
+            button {
+                margin-top: 15px;
+                margin-left: 35px;
+                padding: 5px 10px 5px 10px;
+                background-color: lightskyblue;
+                border-radius: 8px;
+                transition: 0.1s;
+            }
+            button:hover {
+                font-size: large;
+            }
+
+        </style>
+    </head>
+<body>
+    <h1>JavaScript Exercises:</h1>
+    <br>
+
+    <h2>Simple Hello World</h2  >
+    <button onclick="helloWorld()">HELLO WORLD</button>
+
+    <h2>Hello Gabriel</h2>
+    <button onclick="hello('Gabriel')">HELLO GABRIEL</button>
+
+    <h2>Hello NAME</h2>
+    <button onclick="helloName()">HELLO NAME</button>
+
+    <h2>Hello Confirmed</h2>
+    <button onclick="helloConfirm()">HELLO CONFIRMED</button>
+
+    <h2>Count to ten</h2>
+    <button onclick="oneTen()">COUNT  TO TEN</button>
+
+    <h2>Change Div Color</h2>
+    <button onclick>CHANGE COLOR</button>
+
+    <script>
+        function helloWorld(){
+            alert("Hello World");
+        }
+        function hello(name){
+            alert("Hello " + name + "!");
+        }
+        function helloName(){
+            var name = prompt("Enter your name");
+            alert("Hello " + name + "!");
+        }
+        function helloConfirm(){
+            var name = prompt("Enter your name");
+            var confirmed = confirm("Are you sure this is your name: " + name)
+            if (confirmed){
+                alert("Hello " + name + "!");
+            }
+            else {
+                name = prompt("enter your name");
+                confirmed = confirm("Are you sure this is your name: " + name);
+                if (confirmed){
+                    alert("Hello " + name + "!");
+                }
+            }
+        }
+        function oneTen(){
+            for (var i = 1; i <= 10; i++){
+            alert (i);
+            }
+        }
+        function changeCol(){
+            
+        }
+    </script>
+</body>
+</html>
