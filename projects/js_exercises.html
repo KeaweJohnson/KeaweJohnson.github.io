@@ -10,6 +10,7 @@
             }
             html {
                 font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+                margin-bottom: 30px;
             }
             h1 {
                 margin: 5px;
@@ -31,7 +32,17 @@
             button:hover {
                 font-size: large;
             }
-
+            .box {
+                display: block;
+                width: 30px;
+                height: 30px;
+                background-color: #ccc;
+                border: black 1px solid;
+                border-radius: 2px;
+                margin-left: 40px;
+                margin-top: 20px;
+                transition: all 0.5s;
+            }
         </style>
     </head>
 <body>
@@ -54,8 +65,12 @@
     <button onclick="oneTen()">COUNT  TO TEN</button>
 
     <h2>Change Div Color</h2>
-    <button onclick>CHANGE COLOR</button>
+    <button onclick="changeCol()">CHANGE COLOR</button>
+    <div id="btnclr" class="box"></div>
 
+    <h2>Move Div</h2>
+    <button onclick="moveDiv">MOVE DIV</button>
+    <div id="btnloc" class="box"></div>
     <script>
         function helloWorld(){
             alert("Hello World");
@@ -87,7 +102,10 @@
             }
         }
         function changeCol(){
-            
+            document.getElementById("btnclr").style.backgroundColor = "#fc0"
+        }
+        function moveDiv(){
+            document.getElementById("btnloc").style.transform = "translateX(200px)";
         }
     </script>
 </body>
