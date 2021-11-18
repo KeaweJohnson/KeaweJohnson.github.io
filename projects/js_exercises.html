@@ -43,6 +43,9 @@
                 margin-top: 20px;
                 transition: all 0.5s;
             }
+            .colorChange {
+                background-color: yellow;
+            }
             .butnloc {
                 transform: translateX(200px) ;
             }
@@ -105,10 +108,14 @@
             }
         }
         function changeCol(){
-            document.getElementById("btnclr").style.backgroundColor = "yellow"
+            //document.getElementById("btnclr").classList.toggle("colorChange")
+
+            var box = document.getElementById("btnclr")
+            box.classList.toggle("colorChange")
         }
         function moveDiv(){
-            document.getElementById("btnloc").classList.toggle("butnloc");
+            var box = document.getElementById("btnloc")
+            box.classList.toggle("butnloc");
         }
     </script>
 </body>
