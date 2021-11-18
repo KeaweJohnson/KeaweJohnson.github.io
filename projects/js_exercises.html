@@ -43,6 +43,9 @@
                 margin-top: 20px;
                 transition: all 0.5s;
             }
+            .butnloc {
+                transform: translateX(200px) ;
+            }
         </style>
     </head>
 <body>
@@ -69,7 +72,7 @@
     <div id="btnclr" class="box"></div>
 
     <h2>Move Div</h2>
-    <button onclick="moveDiv">MOVE DIV</button>
+    <button onclick="moveDiv()">MOVE DIV</button>
     <div id="btnloc" class="box"></div>
     <script>
         function helloWorld(){
@@ -102,10 +105,10 @@
             }
         }
         function changeCol(){
-            document.getElementById("btnclr").style.backgroundColor = "#fc0"
+            document.getElementById("btnclr").style.backgroundColor = "yellow"
         }
         function moveDiv(){
-            document.getElementById("btnloc").style.transform = "translateX(200px)";
+            document.getElementById("btnloc").classList.toggle("butnloc");
         }
     </script>
 </body>
